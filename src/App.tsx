@@ -20,13 +20,35 @@ const App: React.FC = () => {
   console.log(data);
 
   return (
-    <div>
-      <button className="posts" onClick={() => setQuery("posts")}>
+    <div className="container center">
+      <button
+        type="button"
+        className="btn btn-outline-primary"
+        onClick={() => setQuery("posts")}
+      >
         POSTS
       </button>
-      <button onClick={() => setQuery("albums")}>ALBUMS</button>
-      <button onClick={() => setQuery("photos")}>PHOTOS</button>
-      <button onClick={() => setQuery("todos")}>TODOS</button>
+      <button
+        type="button"
+        className="btn btn-outline-primary"
+        onClick={() => setQuery("albums")}
+      >
+        ALBUMS
+      </button>
+      <button
+        type="button"
+        className="btn btn-outline-primary"
+        onClick={() => setQuery("photos")}
+      >
+        PHOTOS
+      </button>
+      <button
+        type="button"
+        className="btn btn-outline-primary"
+        onClick={() => setQuery("todos")}
+      >
+        TODOS
+      </button>
       <hr />
       {data.map(data => (
         //@ts-ignore
