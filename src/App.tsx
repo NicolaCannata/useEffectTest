@@ -20,7 +20,7 @@ const App: React.FC = () => {
   console.log(data);
 
   return (
-    <div className="container center">
+    <div className="container">
       <button
         type="button"
         className="btn btn-outline-primary"
@@ -52,7 +52,7 @@ const App: React.FC = () => {
       <hr />
       {data.map(data => (
         //@ts-ignore
-        <p>{data.title}</p>
+        <li>{data.title}</li>
       ))}
     </div>
   );
